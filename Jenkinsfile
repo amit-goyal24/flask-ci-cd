@@ -23,8 +23,8 @@ pipeline {
         stage('Run Locally') {
             steps {
                 script {
-                    sh 'docker rm -f flask-app || true'
-                    sh 'docker run -d --name flask-app -p 5000:5000 ${DOCKER_IMAGE}:latest'
+                    bat 'docker rm -f flask-app || true'
+                    bat 'docker run -d --name flask-app -p 5000:5000 ${DOCKER_IMAGE}:latest'
                 }
             }
         }
