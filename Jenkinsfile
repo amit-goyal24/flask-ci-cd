@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/amit-goyal24/flask-ci-cd'
+                git 'https://github.com/amit-goyal24/flask-ci-cd.git'
             }
         }
 
